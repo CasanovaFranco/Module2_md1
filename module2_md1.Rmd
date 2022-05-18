@@ -1,0 +1,111 @@
+---
+title: "Module2 - R Markdown Document 1"
+author: "Franco J. Casanova."
+date: '2022-05-16'
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a level i header
+
+## R Markdown
+
+### This is a level 3 header
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Here is a link to [GOOGLE](http://google.com)
+
+Here is a word in **SENMACHE GOD** and another word in __bold__.
+
+Here is a word in *italics* and another word in _italics_.
+
+[Hello word](https://www.youtube.com)
+
+Here is an example of a non-numbered list:
+
+* Breakfast 
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+* Lunch
+    - taco
+* Dinner
+    - baked chicken 
+    - broccoli
+    - rice
+
+Here is an example of a numbered list:
+
+1. Breakfast 
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+2. Lunch
+    a. taco
+3. Dinner
+    a. baked chicken 
+    b. broccoli
+    c. rice
+
+Here is an example of block quote:
+
+> This is a block quote. This
+> paragraph has tow lines.
+>
+> 1. This is a list inside a block quote
+> 2. Second item.
+
+Here is an example of a nested block quote:
+
+> This is a block quote. This
+> paragraph has tow lines.
+>
+>> This text is nesten
+
+Here is an example of a nested block quote:
+
+>     2+2
+>     mean(2(1,2,3,4,5))
+
+```
+[Hello word](https://www.youtube.com)
+
+```
+
+  When we compile our document, we are using the `rmarkdown` package.
+  
+Here are some example R commands:
+```
+2+2
+mean(c(1,2,3,4,5))
+
+```
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
