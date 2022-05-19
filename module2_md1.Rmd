@@ -3,9 +3,9 @@ title: "Module2 - R Markdown Document 1"
 author: "Franco J. Casanova."
 date: '2022-05-16'
 output:
+  html_document: default
   pdf_document: default
   word_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -97,6 +97,10 @@ mean(c(1,2,3,4,5))
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}
+```
+
+
+```{r cars}
 summary(cars)
 ```
 
@@ -109,3 +113,20 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r pressure2, echo=TRUE, fig.height=4, fig.width=4}
+plot(pressure)
+
+```
+
+
+## Insert Tables
+ 
+```{r}
+knitr::kable(head(cars),
+             caption = "Top 6 Rows of cars Dateset")
+```
+ 
+##Insert an equation
+
+$$ Y = \beta_0 + \beta_1x $$
+$$ Y = \sum_0 + \oint_1x $$
